@@ -33,4 +33,4 @@ Improve the Persona / Agent Identity section of the `agents/software-engineer.md
 > 2026-06-14 15:45 IST | Prasad — Initial requirement drafted for Agent Identity enhancement.
 
 ## Status
-[ ] Draft  [x] Approved  [ ] In Progress  [ ] Done
+[ ] Draft  [x] Approved  [ ] In Progress  [x] Done
