@@ -69,124 +69,20 @@ sdlc-processes/
 
 Create folders and the `WorkOrder/` subfolder if missing. Use sequential cycle numbers.
 
-# Document Templates
+# SDLC Document Skill Reference
 
-## Req[#N][UserName]-ShortTitle.md
+When creating or updating any SDLC document, use the `sdlc-document-design-skill` skill.
+It provides the full markdown templates, folder structure rules, naming conventions,
+and section-by-section filling instructions for all 5 SDLC document types.
 
-```markdown
-# Req[#N][UserName] — [ShortTitle]
-## Date
-## Request Summary
-## Actors
-## Functional Requirements
-- FR-1:
-## Non-Functional Requirements
-- NFR-1:
-## Out of Scope
-## Assumptions
-## Open Questions
-## Notes
-> [Timestamp] | [UserName] — [Note]
-## Status
-[ ] Draft  [ ] Approved  [ ] In Progress  [ ] Done
-```
+| Document Type | File Pattern | When to Use Skill |
+|---|---|---|
+| Requirement | `Req[#N][UserName]-ShortTitle.md` | Phase 2 — after understanding the request |
+| Technical Plan | `TechPlan[#N][UserName]-ShortTitle.md` | Phase 3 — after Requirement approval |
+| Work Order | `WO[#N.M][UserName]-ShortTitle.md` | Phase 4 — after Technical Plan approval |
+| Deliverables Completed | `DeliverablesCompleted[#N][UserName]-ShortTitle.md` | Phase 7 — after all Work Orders are done |
+| Release Note | `ReleaseNote[#N][UserName]-ShortTitle.md` | Phase 7 — after all Work Orders are done |
 
-## DeliverablesCompleted[#N][UserName]-ShortTitle.md
-
-```markdown
-# DeliverablesCompleted[#N][UserName] - [ShortTitle]
-## Date
-## Linked Requirement
-## Deliverables Summary
-# Milestones Achieved
-## Milestone N — [Milestone Title]
-### Status
-### Deliverables
-### Files Delivered
-### Completion Timestamp
-# Client Update Call Note
-## Client Communication Summary
-### Key Updates Shared
-### Overall Requirement Status
-### Risks / Concerns
-# Delivery Completion Summary
-## Final Delivered Scope
-## Overall Status
-## Final Validation Status
-## Sign-Off Readiness
-```
-
-## ReleaseNote[#N][UserName]-ShortTitle.md
-
-```markdown
-# ReleaseNote[#N][UserName] - [ShortTitle]
-## Date
-## Release Summary
-# Included Enhancements
-## Enhancement N - <EnhancementTitle>
-# Files Modified
-- <relativeModifiedFilePath>
-# Backward Compatibility
-# Validation Summary
-## Functional/Responsive/Regression/Other Validation
-# Release Status
-# Notes
-> [Timestamp] | [UserName] — [Note]
-```
-
-## TechPlan[#N][UserName]-ShortTitle.md
-
-```markdown
-# TechPlan[#N][UserName] — [ShortTitle]
-## Date
-## Linked Requirement
-## Codebase Analysis Summary
-## Proposed Solution
-## Files to Create
-| File Path | Purpose |
-## Files to Modify
-| File Path | What Changes |
-## Files to Delete
-| File Path | Reason |
-## Dependencies / Libraries
-## Risks & Considerations
-## Work Orders Planned
-- WO[#N.1]- [Title]
-## Notes
-> [Timestamp] | [UserName] — [Note]
-## Status
-[ ] Draft  [ ] Approved  [ ] In Progress  [ ] Done
-```
-
-## WO[#N.M][UserName]-ShortTitle.md
-
-```markdown
-# WO[#N.M][UserName] — [ShortTitle]
-## Date
-## Linked Technical Plan
-## Objective
-## Scope
-## Detailed Instructions
-### Step 1 — [Action]
-- File: `path/to/file`
-- Change: [Exact description]
-- Reason: [Why]
-## Code References
-## Checklist
-- [ ] Step 1 complete
-- [ ] Self-reviewed
-- [ ] Tested / validated
-- [ ] Docs updated (if needed)
-## Manual Steps Required by User
-[Steps user must do manually, or "None".]
-## Timesheet
-| Timestamp (TZ) | User | Description | Notes |
-|---|---|---|---|
-| 2026-05-28 15:01 IST | [UserName] | [Work done] | [Note] |
-## Status
-[ ] Pending  [ ] In Progress  [ ] Blocked  [ ] Done
-## Notes / Blockers
-```
 
 # Phase Workflow
 
